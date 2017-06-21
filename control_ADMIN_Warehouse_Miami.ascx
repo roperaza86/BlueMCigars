@@ -2,7 +2,7 @@
 
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
 
-<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+<%--<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>--%>
 
 
 <%@ Register assembly="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" namespace="CrystalDecisions.Web" tagprefix="CR" %>
@@ -497,12 +497,11 @@
                                      </asp:GridView>
                                      &nbsp;<CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" 
                                          AutoDataBind="true" />
-                                     &nbsp;<rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" 
+                                     &nbsp;<%--<rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" 
                                          Font-Size="8pt" InteractiveDeviceInfos="(Collection)" 
                                          WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" 
                                          ShowExportControls="False" ShowFindControls="False" ShowRefreshButton="False" 
-                                         ShowZoomControl="False"><LocalReport ReportPath="Report2.rdlc"></LocalReport></rsweb:ReportViewer>
-                                     <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
+                                         ShowZoomControl="False"><LocalReport ReportPath="Report2.rdlc"></LocalReport></rsweb:ReportViewer>--%><asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
                                          OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" 
                                          TypeName="DataSetMiamiTableAdapters.SP_miami_historialTableAdapter">
                                      </asp:ObjectDataSource>

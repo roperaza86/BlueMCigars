@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.Configuration;
-using Microsoft.Reporting.WebForms;
+//using Microsoft.Reporting.WebForms;
 
 public partial class control_ADMIN_main_ouvre : System.Web.UI.UserControl
 {
@@ -55,10 +55,10 @@ public partial class control_ADMIN_main_ouvre : System.Web.UI.UserControl
 
 
       
-        ReportViewer1.Visible = true;
-        ReportViewer1.LocalReport.ReportPath = "Report1.rdlc";
-        ReportViewer1.LocalReport.DataSources.Clear();
-        ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", ResultsTable));
+        //ReportViewer1.Visible = true;
+        //ReportViewer1.LocalReport.ReportPath = "Report1.rdlc";
+        //ReportViewer1.LocalReport.DataSources.Clear();
+        //ReportViewer1.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", ResultsTable));
 
     }
 }

@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="control_ADMIN_main_ouvre.ascx.cs" Inherits="control_ADMIN_main_ouvre" %>
-   <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+  <%-- <%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>--%>
    <table>
             <tr bgcolor="Olive" style="color: #FFFFFF">
                 <td align="center" style="font-weight: 700">
@@ -29,8 +29,8 @@
         </table>
 <p>
     </p>
-<rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="756px">
-</rsweb:ReportViewer>
+<%--<rsweb:ReportViewer ID="ReportViewer1" runat="server" Width="756px">
+</rsweb:ReportViewer>--%>
 
 
 
